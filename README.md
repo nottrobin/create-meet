@@ -23,7 +23,12 @@ python3 meet.py
 
 The first time you run this it will open a browser window. You should authorize with your organisation account.
 
-Once authorized correctly, it will generate a meet code. On subsequent runs it shouldn't require authorization.
+Once authorized correctly, it will generate a meet code. On subsequent runs it shouldn't require authorization:
+
+``` bash
+$ python3 meet.py 
+Meet created: https://meet.google.com/guv-somv-haw
+```
 
 ## Service accounts vs user accounts
 
