@@ -36,4 +36,4 @@ It could in theory be possible to use a service account instead of your user acc
 
 The trouble is that a bare service account [can't create conference calls](https://stackoverflow.com/questions/61050432/cant-create-a-hangoutsmeet-with-calendar-api-using-java). Instead it needs to impersonate a user. To do that, it needs [domain-wide delegation of authority](https://developers.google.com/cloud-search/docs/guides/delegation) which must be granted by an organisation administrator.
 
-Instead, we use a standard OAuth2 flow to authenticate as your user, and save your API token in `token.json`. Then as long as this file exists, you shouldn't need to authenticate again. This isn't ideal as it's sharing the permissions for a user, but it works.
+Instead, we use [a standard OAuth2 flow](https://developers.google.com/people/quickstart/python) to authenticate as your user, and save your API token in `token.json`. Then as long as this file exists, you shouldn't need to authenticate again. This isn't ideal as it's sharing the permissions for a user, but it works.

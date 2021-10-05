@@ -17,6 +17,14 @@ def get_service_account_credentials():
 
 
 def get_user_account_credentials():
+    """
+    Get credentials for authorising an installed application using the
+    Google API OAuth 2.0 method.
+
+    Code copied from here:
+    https://developers.google.com/people/quickstart/python
+    """
+
     credentials = None
     # The file token.json stores the user's access and refresh tokens, and is
     # created automatically when the authorization flow completes for the first
