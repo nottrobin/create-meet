@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 import time
 import os.path
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -77,4 +79,8 @@ event = (
     .execute()
 )
 
-print(f'Meet created: {event.get("hangoutLink")}')
+meet_url = event.get("hangoutLink")
+
+calendar.events().delete(calendarId="primary", eventId=event["id"]).execute()
+
+print(f"Meet created: {meet_url}")

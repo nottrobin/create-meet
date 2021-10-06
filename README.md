@@ -18,7 +18,7 @@ Go to the credential page in the Google Cloud Console for an OAuth 2.0 credentia
 ## Usage
 
 ``` bash
-python3 meet.py
+./meet.py
 ```
 
 The first time you run this it will open a browser window. You should authorize with your organisation account.
@@ -26,7 +26,7 @@ The first time you run this it will open a browser window. You should authorize 
 Once authorized correctly, it will generate a meet code. On subsequent runs it shouldn't require authorization:
 
 ``` bash
-$ python3 meet.py 
+$ ./meet.py 
 Meet created: https://meet.google.com/guv-somv-haw
 ```
 
